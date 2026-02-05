@@ -35,12 +35,12 @@ Each layer is maintained in seperate folder
 
 2. `utilities` folder --folder contains reusable helper functions and shared logic
 
+Pipeline Editor:
 
-
-![Pipeline editor:](<Screenshot 2026-02-04 181744.png>)
+![alt text](<Pipeline Editor.png>)
 
 Successfully runned pipeline :
 
-![Pipeline Lineage](image.png)
+![alt text](Lineage.png)
 
 For more tutorials and reference material, see https://learn.microsoft.com/azure/databricks/ldp.
