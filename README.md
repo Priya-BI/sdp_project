@@ -9,7 +9,16 @@ Lakeflow Spark Declarative Pipelines is a declarative framework for developing a
 4. **Sink** - A sink is a streaming target for a pipeline,can have one or more streaming flows (Append) written into it.
 5. **Pipelines** - A pipeline is the unit of development and execution in Lakeflow Spark Declarative Pipelines. A pipeline can contain one or more flows, streaming tables, materialized views, and sinks
 
-## Raw data:
+
+##  Focus of this project is on:
+1. Declarative data modeling
+2. Incremental processing using Auto CDC
+3. Data Quality
+4. Business-ready transformations
+
+## Data Architecture ##
+
+## Raw data (.csv file):
 1. sales
 2. product
 3. customer
@@ -19,9 +28,9 @@ Lakeflow Spark Declarative Pipelines is a declarative framework for developing a
 
 1. `transformations` folder -- most of the relevant source code lives there.
 Each layer is maintained in seperate folder
-   * **Bronze** -Raw data with basic data quality rule.
-   * **Silver** - Transformed ,standarized and applying required data quality checks.
-   * **Gold**-  Designed fact and dimension tables using Kimball dimensional modeling concepts and applied business rules
+   - **Bronze** -Raw data with basic data quality rule.
+   - **Silver** - Transformed ,standarized and applying required data quality checks.
+   - **Gold**-  Designed fact and dimension tables using Kimball dimensional modeling concepts and applied business rules
 1. `exploration` folder -- to test/explore your code.
 
 2. `utilities` folder --folder contains reusable helper functions and shared logic
